@@ -1,0 +1,25 @@
+﻿<Window x:Class="_5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TextBlock Text="Введите цифру :" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="20" Margin="113,42,135,22" Height="75"/>
+        <TextBox Grid.Row="0" Grid.Column="1" Height="75" Width="350" x:Name="NumberA" Margin="22,32,24,32"/>
+        <TextBox Grid.Row="1" Grid.ColumnSpan="2" x:Name="Text1" IsReadOnly="True" VerticalScrollBarVisibility="Visible"/>
+        <Button Grid.Row="2" Grid.ColumnSpan="2" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Ответ"
+                FontSize="30" Click="Button_Click" Height="75" Width="250" Margin="271,31,271,34"/>
+    </Grid>
+</Window>
