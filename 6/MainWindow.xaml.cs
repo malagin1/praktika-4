@@ -44,6 +44,6 @@ namespace _6
             {
                 Text1.Text += "false";
             }
-        }
+         }
         }    
 }
