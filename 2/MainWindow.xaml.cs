@@ -15,9 +15,6 @@ using System.Windows.Shapes;
 
 namespace _2
 {
-    /// <summary>
-    /// Логика взаимодействия для MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
         public MainWindow()
@@ -26,7 +23,7 @@ namespace _2
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Resul.Clear();
+            Text2.Clear();
             if (Int32.TryParse(NumberA.Text, out int a))
             {
                 switch (a / 10)
